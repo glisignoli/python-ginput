@@ -10,6 +10,8 @@ pyperclip = "*"
 [dev-packages]
 autopep8 = "*"
 twine = "*"
+build = "*"
+pipenv-setup = "*"
 
 [requires]
 python_version = "3.10"

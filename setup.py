@@ -1,11 +1,11 @@
-import setuptools
+from setuptools import find_packages, setup
 
 # Meta information
 version = open('VERSION').read().strip()
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-    
-setuptools.setup(
+
+setup(
     # Basic info
     name='ginput-glisignoli',
     version=version,
@@ -29,11 +29,8 @@ setuptools.setup(
 
     # Packages and depencies
     package_dir={'': 'src'},
-    packages=setuptools.find_packages(where="src"),
-    install_requires=[
-        'libevdev',
-        'pyperclip'
-    ],
+    packages=find_packages(where="src"),
+    install_requires=['libevdev==0.10', 'pyperclip==1.8.2'],
     extras_require={
         'dev': [
             'autopep8'

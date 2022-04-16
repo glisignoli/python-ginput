@@ -1,9 +1,8 @@
 import sys
 import logging
 import pyperclip
-import ginput
 import argparse
-
+from ginput.ginput import ginput
 
 def main():
     logging.basicConfig(stream=sys.stdout, level=logging.INFO)
@@ -47,9 +46,9 @@ def main():
         else:
             break
 
-    main = ginput().Main()
-    if main._setup(key_string):
-        main.send_string(key_string)
+    g_main = ginput()
+    if g_main._setup(key_string):
+        g_main.send_string(key_string)
 
 if __name__ == '__main__':
     main()
