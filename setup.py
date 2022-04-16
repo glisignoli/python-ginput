@@ -11,7 +11,7 @@ setup(
     version=version,
     author='Gino Lisignoli',
     author_email='glisignoli@gmail.com',
-    url='https://github.com/glisignpli/python-ginput',
+    url='https://github.com/glisignoli/python-ginput',
     description='Send keystrokes to a virtual keyboard',
     long_description=long_description,
     long_description_content_type="text/markdown",
